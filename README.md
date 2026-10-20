@@ -31,4 +31,34 @@ print("salariul net este", salariul_net)
 
 
 
+total=0
+zilepeste= 0
+
+for zi in range (1,8):
+    incasare=float(input(f"Incasare din ziua {zi}"))
+
+    total=total+incasare
+    if incasare>1000:
+        zilepeste= zilepeste + 1
+
+medie= total/7
+
+print(f "Incasare totala: {total:.2f} euro")
+print(f "Medie zilnica: {medie:.2f} euro")
+print(f "Zile cu incasari peste 2000 euro: {zilepeste} ")
+
+
+
+zile= 0
+vanzarit= 0
+while vanzarit<10000:
+    vanzare= int(input())
+    vanzarit +=vanzare
+    zile+=1
+print(" vanzari totale :", vanzarit)
+print("nr de zile ", zile)
+if vanzarit> 10000:
+    print(" au depasit cu ", vanzarit-10000)
+
+
 
