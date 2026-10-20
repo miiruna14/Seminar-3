@@ -61,4 +61,7 @@ if vanzarit> 10000:
     print(" au depasit cu ", vanzarit-10000)
 
 
-
+pret= float(input())
+while pret<= 0:
+    pret= float(input("Invalid, da alt pret "))
+print("pret valid", pret)
